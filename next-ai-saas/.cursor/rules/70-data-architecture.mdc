@@ -1,0 +1,41 @@
+---
+description: Data files, routes, and content separation per Nexsas master guide
+globs: src/data/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Data architecture
+
+## Principle
+
+Keep **repeatable content** out of page files. Use typed modules under `src/data/` and import into pages, sections, and components.
+
+## Recommended data modules (extend as needed)
+
+| File (example)        | Purpose |
+|----------------------|---------|
+| `demos.ts`           | Homepage demo definitions, slugs, section order |
+| `navigation.ts`      | Main nav, footer links |
+| `footer-links.ts`    | Footer columns (when split from nav) |
+| `features.ts`        | Feature lists / grids |
+| `pricing.ts`         | Tiers, copy |
+| `testimonials.ts`    | Quotes, avatars |
+| `faq.ts`             | Questions / answers |
+| `integrations.ts`    | Integration logos, links |
+| `use-cases.ts`       | Use case cards |
+| `customers.ts`       | Logos / stories |
+| `blog.ts`            | Post metadata (or move to CMS later) |
+| `careers.ts`         | Job listings |
+| `prompts.ts`         | In-app prompt library demo data |
+| `workflows.ts`       | Workflow automation demo |
+| `analytics.ts`       | Dashboard chart / KPI demo |
+| `dashboard-nav.ts`   | Sidebar / app nav |
+
+## Routes
+
+- Central paths live in **`src/routes.ts`**. When adding a page, **add the path** there first, then use `routes.*` in components and data (avoid stringly-typed URLs).
+- Route groups **do not** appear in the URL: `(marketing)/pricing/page.tsx` → `/pricing`.
+
+## Demo system
+
+- Multiple home demos should be driven from **`demos.ts`** (slug, title, `sectionOrder`, `heroVariant`) — not unrelated one-off pages.

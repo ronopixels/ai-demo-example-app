@@ -1,0 +1,18 @@
+---
+description: Workflow for building or editing a single page
+alwaysApply: true
+---
+
+# Page build workflow
+
+Follow this order for each page or feature slice:
+
+1. **Read** the goal and which route group (marketing / auth / dashboard) is affected.
+2. **Check** `src/data/*` for existing content; add or extend data files instead of inlining duplicate data.
+3. **Reuse** existing sections and components from `src/sections` and `src/components`.
+4. **Icons**: if the task adds or changes icons, use **`@phosphor-icons/react`** (see `25-phosphor-icons.mdc`).
+5. **Implement** only the files needed for this task; keep scope tight.
+6. **Stop** after the requested page/section works; do not refactor unrelated modules.
+7. **Summarize** changed files and assumptions in the reply.
+
+**Rule of thumb**: one prompt = one task = one primary target = one review.

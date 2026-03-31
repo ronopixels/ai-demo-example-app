@@ -1,0 +1,17 @@
+---
+description: If you maintain a parallel static HTML export — alignment rules
+globs: "**/*.html"
+alwaysApply: false
+---
+
+# Static HTML parity (optional)
+
+This repo is **Next.js-first**. If you add or sync a separate `html/` export:
+
+- Treat the **Next.js page as source of truth** for structure and content.
+- **No** React/Next-specific code in HTML (no hooks, no `next/image` in static export — use plain `<img>` where needed).
+- Next uses **`@phosphor-icons/react`** for icons; in HTML use **inline SVG or images** that match visually — not the npm package.
+- Preserve **class naming** and section order so CSS and documentation stay consistent.
+- Document any **intentional differences** (e.g. build-time vs static assets).
+
+If the project has no HTML files, ignore this rule.

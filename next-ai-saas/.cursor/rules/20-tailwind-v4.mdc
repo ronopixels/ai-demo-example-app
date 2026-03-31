@@ -1,0 +1,13 @@
+---
+description: Tailwind v4 styling conventions
+globs: **/*.{tsx,css}
+alwaysApply: false
+---
+
+# Tailwind v4
+
+- Use **Tailwind v4** with `@import "tailwindcss"` in `globals.css` and `@theme` for design tokens when extending.
+- Prefer **utility classes** in JSX; use `cn()` from `@/lib/cn` for conditional classes.
+- Keep **spacing and hierarchy** consistent (premium SaaS: clear sections, readable type, soft radii).
+- Avoid arbitrary one-off colors unless they match the design system; extend theme in CSS when a token repeats.
+- Ensure **focus states** for interactive elements (keyboard accessibility).

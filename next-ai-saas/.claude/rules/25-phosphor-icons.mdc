@@ -1,0 +1,17 @@
+---
+description: UI icons must use @phosphor-icons/react (no other icon libraries)
+globs: src/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Icons — `@phosphor-icons/react`
+
+- **When you need an icon** in React UI (nav, buttons, lists, dashboard, empty states, feature rows), use **`@phosphor-icons/react`**. Do **not** add Lucide, Heroicons, `react-icons`, Font Awesome, or other icon packages.
+- **Import** named icons, e.g. `import { House, CaretRight, Sparkle } from '@phosphor-icons/react'`.
+- **Style**: use `className` with Tailwind (e.g. `size-5 text-zinc-500`) and Phosphor props `size`, `weight` (`regular`, `bold`, `fill`, `duotone`, …) to match the design system.
+- **Server vs client**: Prefer keeping icons in Server Components when they are static. If the file is already `"use client"`, icons live there. If a boundary error appears, extract a small client wrapper only around the interactive piece.
+- **Accessibility**: Decorative icons → parent or icon with `aria-hidden`. If the icon is the only label, put `aria-label` on the **button/link**, not duplicated on the icon.
+- **Exceptions** (Phosphor not required):
+  - **Brand logos**, **favicons**, marketing illustrations.
+  - **One-off complex SVGs** where no Phosphor glyph fits (document why).
+  - **Static HTML export** (`sync-html`): use inline SVG or image assets that **visually match** the Next.js page — do not use this npm package in plain HTML.

@@ -1,0 +1,12 @@
+---
+description: Commercial template constraints — ThemeForest-ready quality
+alwaysApply: true
+---
+
+# ThemeForest / template constraints
+
+- **Template-first**: Ship polished, demo-ready UI with realistic placeholder copy and data. No fake “production” backend claims.
+- **Quality**: Responsive (mobile, tablet, desktop), no broken links, consistent layout between marketing and dashboard.
+- **Dependencies**: Avoid unnecessary packages. **Icons** are standardized on **`@phosphor-icons/react`** only; do not add other icon libraries or full UI kits without explicit approval.
+- **Customization**: Structure should make it easy for buyers to swap branding, colors, and copy via data files and tokens.
+- **Scope**: Do not couple pages to a specific auth provider or database; keep integration points obvious and minimal.

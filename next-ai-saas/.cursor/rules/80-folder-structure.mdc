@@ -1,0 +1,51 @@
+---
+description: Target src/ tree and component levels (Nexsas master guide)
+globs: src/**/*
+alwaysApply: false
+---
+
+# Folder structure (Next.js app)
+
+## Target layout
+
+```txt
+public/
+  images/  icons/  favicons/
+
+src/
+  app/
+    (marketing)/  (auth)/  (dashboard)/
+    api/
+    globals.css  layout.tsx  not-found.tsx  robots.ts  sitemap.ts
+  components/
+    ui/           # Level 1 — primitives
+    common/       # Level 2 — shared
+    layout/       # Level 2 — shell pieces
+    marketing/    # Level 3 — domain
+    auth/
+    dashboard/
+  sections/       # Full-width page sections (compose ui + domain components)
+  features/       # Optional feature modules (when useful)
+  data/
+  hooks/
+  lib/
+  constants/
+  types/
+  styles/         # Optional extra styles
+```
+
+## Component levels
+
+1. **`components/ui/`** — button, input, textarea, select, badge, card, avatar, tabs, accordion, modal, switch, tooltip.
+2. **`components/common/` + `layout/`** — section-heading, page-hero, breadcrumb, theme-toggle, social-links, pagination, main-navbar, main-footer, mobile-menu.
+3. **`components/marketing|auth|dashboard/`** — pricing-card, testimonial-card, auth-shell, dashboard-sidebar, etc.
+
+## Sections
+
+- **`src/sections/<area>/`** — e.g. `sections/pricing/pricing-hero.tsx`; page-specific composition lives here; **kebab-case** files, **PascalCase** exports.
+
+## Naming
+
+- Files: **kebab-case** (`pricing-card.tsx`).
+- Exports: **PascalCase** (`PricingCard`).
+- Name by **purpose**, not appearance.

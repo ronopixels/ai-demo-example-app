@@ -1,0 +1,12 @@
+export { AnalyticsPreviewSection, type AnalyticsPreviewSectionProps } from "./analytics-preview-section";
+export { AnnouncementBarSection, type AnnouncementBarSectionProps } from "./announcement-bar-section";
+export { CtaSection, type CtaSectionProps } from "./cta-section";
+export { FaqSection } from "./faq-section";
+export { FeaturesSection } from "./features-section";
+export { HeroSection, type HeroSectionProps } from "./hero-section";
+export { HomeV1 } from "./home-v1";
+export { IntegrationsSection, type IntegrationsSectionProps } from "./integrations-section";
+export { LogoStripSection, type LogoStripSectionProps } from "./logo-strip-section";
+export { PricingSection } from "./pricing-section";
+export { ProductPreviewSection, type ProductPreviewSectionProps } from "./product-preview-section";
+export { TestimonialsSection } from "./testimonials-section";

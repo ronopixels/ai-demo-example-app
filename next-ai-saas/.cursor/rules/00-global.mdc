@@ -1,0 +1,16 @@
+---
+description: Global engineering standards for the Nexsas Next.js template
+alwaysApply: true
+---
+
+# Global rules
+
+- **Stack**: Next.js App Router, TypeScript, Tailwind CSS v4. **Icons**: `@phosphor-icons/react` only when the UI needs icons (see `25-phosphor-icons.mdc`).
+- **Files**: kebab-case for filenames (e.g. `pricing-card.tsx`). Component **names** are PascalCase.
+- **Naming**: Name by **purpose**, not appearance (prefer `FeatureCard`, not `BlueCard`).
+- **Scope**: One task = minimal diff. Do not edit unrelated files or add dependencies unless explicitly required.
+- **Data**: Prefer `src/data/*.ts` for repeatable content (nav, pricing, FAQ, demos). Avoid large hardcoded blobs in page files.
+- **Components**: Prefer Server Components by default; add `"use client"` only when interactivity requires it.
+- **Exports**: Keep public APIs clear; colocate types when small.
+
+When finishing a task, list **changed files** and **assumptions** briefly.

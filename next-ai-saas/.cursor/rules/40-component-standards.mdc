@@ -1,0 +1,27 @@
+---
+description: Component folders, naming, and section vs UI primitives
+globs: src/components/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Component standards
+
+## Folders
+
+- `src/components/ui/` — primitives: button, input, card, badge, tabs, accordion, modal, etc.
+- `src/components/common/` + `src/components/layout/` — shared: navbar, footer, breadcrumbs, theme-toggle, pagination.
+- `src/components/marketing/`, `auth/`, `dashboard/` — feature-specific composed pieces.
+
+## Sections
+
+- `src/sections/` — full-width page sections (e.g. `hero-section`, `pricing-section`) that compose primitives + marketing components.
+
+## Icons
+
+- Use **`@phosphor-icons/react`** for UI icons. No other icon libraries. See **`25-phosphor-icons.mdc`**.
+
+## Conventions
+
+- **Props**: Prefer explicit props; avoid dumping entire page data objects unless the section is a thin wrapper.
+- **Suffix**: Section components may use `*Section` naming; cards use `*Card`.
+- **Reuse**: Extend existing components before adding near-duplicates.

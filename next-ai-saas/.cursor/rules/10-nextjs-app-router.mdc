@@ -1,0 +1,13 @@
+---
+description: Next.js App Router, layouts, and route groups for this template
+globs: src/app/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Next.js App Router
+
+- **Route groups**: Use `(marketing)` for public pages, `(auth)` for sign-in/up flows, `(dashboard)` for app UI. Groups do not appear in the URL.
+- **Layouts**: Shared chrome (nav, footer, dashboard shell) belongs in the relevant `layout.tsx`. Nest layouts; avoid duplicating wrappers on every page.
+- **Pages**: Compose pages from `src/sections/*` and `src/components/*`. Prefer composition over dumping markup into `page.tsx`.
+- **Metadata**: Use `metadata` / `generateMetadata` where appropriate; keep `site-config` and `robots` / `sitemap` aligned.
+- **API**: `src/app/api/*` for route handlers only when needed; template stays backend-agnostic unless a feature requires it.
