@@ -67,9 +67,11 @@ Barrel: `src/components/auth/index.ts`
 
 **Dashboard**
 
-- [x] dashboard-sidebar
+- [x] dashboard-sidebar (Phosphor nav icons)
 - [x] dashboard-topbar
 - [x] dashboard-stat-card
+- [x] dashboard-list-icon (`dashboard-list-icon.tsx` — Phosphor rows)
+- [x] notification-prefs-form (`notification-prefs-form.tsx` — settings)
 - [ ] analytics-chart-card
 - [ ] activity-feed-card
 - [x] billing-plan-card

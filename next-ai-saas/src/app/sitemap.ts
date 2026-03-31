@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/constants/site-config";
 import { getAllBlogSlugs } from "@/data/blog";
+import { dashboardNavItems } from "@/data/dashboard-nav";
 import { routes } from "@/routes";
 
 const weekly = { changeFrequency: "weekly" as const, lastModified: new Date() };
@@ -57,6 +58,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}${routes.marketing.blog}/${slug}`,
       ...weekly,
       priority: 0.75,
+    });
+  }
+
+  for (const { href } of dashboardNavItems) {
+    entries.push({
+      url: `${base}${href}`,
+      ...weekly,
+      priority: 0.55,
+    });
+  }
+
+  const dynamicDashboard = [
+    ...["1", "2", "3"].map((id) => `${routes.dashboard.aiAssistant}/${id}`),
+    ...["p1", "p2"].map((id) => `${routes.dashboard.prompts}/${id}`),
+    ...["u1", "u2", "u3"].map((id) => `${routes.dashboard.team}/${id}`),
+  ];
+  for (const path of dynamicDashboard) {
+    entries.push({
+      url: `${base}${path}`,
+      ...weekly,
+      priority: 0.5,
     });
   }
 

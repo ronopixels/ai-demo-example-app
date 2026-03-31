@@ -65,27 +65,27 @@ Use with **`src/routes.ts`**: add paths when you add pages. Route groups **do no
 | Page                     | Route (example)                     | Status |
 | ------------------------ | ----------------------------------- | ------ |
 | Overview                 | `/dashboard`                        | ✓      |
-| Analytics                | `/dashboard/analytics`              | Later  |
-| Projects / workspace     | `/dashboard/projects`               | Later  |
-| AI assistant             | `/dashboard/ai-assistant`           | Later  |
-| AI chat detail           | `/dashboard/ai-assistant/[id]`      | Later  |
-| Workflow automation      | `/dashboard/workflow-automation`    | Later  |
-| Workflow builder detail  | `/dashboard/workflow/...`           | Later  |
-| Prompt library           | `/dashboard/prompts`                | Later  |
-| Prompt detail            | `/dashboard/prompts/[id]`           | Later  |
-| Integrations             | `/dashboard/integrations`           | Later  |
-| File manager / KB        | `/dashboard/files`                  | Later  |
-| Reports                  | `/dashboard/reports`                | Later  |
-| Team                     | `/dashboard/team`                   | Later  |
-| Team member              | `/dashboard/team/[id]`              | Later  |
-| Notifications            | `/dashboard/notifications`          | Later  |
-| Billing                  | `/dashboard/billing`                | Later  |
-| Invoice history          | `/dashboard/billing/invoices`       | Later  |
-| API keys                 | `/dashboard/api-keys`               | Later  |
-| Settings — profile       | `/dashboard/settings/profile`       | Later  |
-| Settings — security      | `/dashboard/settings/security`      | Later  |
-| Settings — appearance    | `/dashboard/settings/appearance`    | Later  |
-| Settings — notifications | `/dashboard/settings/notifications` | Later  |
+| Analytics                | `/dashboard/analytics`              | ✓      |
+| Projects / workspace     | `/dashboard/projects`               | ✓      |
+| AI assistant             | `/dashboard/ai-assistant`           | ✓      |
+| AI chat detail           | `/dashboard/ai-assistant/[id]`      | ✓      |
+| Workflow automation      | `/dashboard/workflow-automation`    | ✓      |
+| Workflow builder detail  | `/dashboard/workflow/builder`       | ✓      |
+| Prompt library           | `/dashboard/prompts`                | ✓      |
+| Prompt detail            | `/dashboard/prompts/[id]`           | ✓      |
+| Integrations             | `/dashboard/integrations`           | ✓      |
+| File manager / KB        | `/dashboard/files`                  | ✓      |
+| Reports                  | `/dashboard/reports`                | ✓      |
+| Team                     | `/dashboard/team`                   | ✓      |
+| Team member              | `/dashboard/team/[id]`              | ✓      |
+| Notifications            | `/dashboard/notifications`          | ✓      |
+| Billing                  | `/dashboard/billing`                | ✓      |
+| Invoice history          | `/dashboard/billing/invoices`       | ✓      |
+| API keys                 | `/dashboard/api-keys`               | ✓      |
+| Settings — profile       | `/dashboard/settings/profile`       | ✓      |
+| Settings — security      | `/dashboard/settings/security`      | ✓      |
+| Settings — appearance    | `/dashboard/settings/appearance`    | ✓      |
+| Settings — notifications | `/dashboard/settings/notifications` | ✓      |
 
 **Route group:** `(dashboard)/…`
 
