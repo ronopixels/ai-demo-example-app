@@ -56,7 +56,12 @@ Barrel: `src/components/marketing/index.ts`
 
 - [x] auth-shell (`auth/auth-shell.tsx`)
 - [x] login-form (`auth/login-form.tsx` — demo; see `/sign-in`)
-- [ ] register-form
+- [x] register-form (`auth/register-form.tsx` — `/sign-up`)
+- [x] forgot-password-form (`auth/forgot-password-form.tsx`)
+- [x] reset-password-form (`auth/reset-password-form.tsx`)
+- [x] two-factor-form (`auth/two-factor-form.tsx` — `/2fa`)
+- [x] verify-email-actions (`auth/verify-email-actions.tsx`)
+- [x] waitlist-form (`auth/waitlist-form.tsx` — `/coming-soon`)
 
 Barrel: `src/components/auth/index.ts`
 

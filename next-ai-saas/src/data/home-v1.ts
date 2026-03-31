@@ -68,5 +68,5 @@ export const homeV1Analytics = {
 export const homeV1Cta = {
   title: "Ready to ship Home v1?",
   description:
-    "Duplicate this page for Home v2/v3 or drive layout from src/data/demos.ts when you add alternate demos.",
+    "See the alternate layout at /home-v2 — same system, different section order and split hero.",
 } as const;

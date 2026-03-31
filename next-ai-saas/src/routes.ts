@@ -1,9 +1,11 @@
 /** Central route paths for links and redirects. Extend as pages are added. */
 export const routes = {
   home: "/",
+  homeV2: "/home-v2",
   marketing: {
     about: "/about",
     features: "/features",
+    integrations: "/integrations",
     pricing: "/pricing",
     blog: "/blog",
     contact: "/contact",
@@ -15,6 +17,10 @@ export const routes = {
     signIn: "/sign-in",
     signUp: "/sign-up",
     forgotPassword: "/forgot-password",
+    resetPassword: "/reset-password",
+    verifyEmail: "/verify-email",
+    twoFactor: "/2fa",
+    comingSoon: "/coming-soon",
   },
   dashboard: {
     root: "/dashboard",

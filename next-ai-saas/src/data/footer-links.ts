@@ -5,7 +5,9 @@ export const footerColumns = [
   {
     title: "Product",
     links: [
+      { label: "Home v2", href: routes.homeV2 },
       { label: "Features", href: routes.marketing.features },
+      { label: "Integrations", href: routes.marketing.integrations },
       { label: "Pricing", href: routes.marketing.pricing },
       { label: "FAQ", href: routes.marketing.faq },
     ],

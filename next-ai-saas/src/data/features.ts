@@ -27,3 +27,32 @@ export const demoFeatures: FeatureItem[] = [
     icon: "👥",
   },
 ];
+
+/** Full grid for the dedicated /features marketing page (includes home highlights + more). */
+export const marketingPageFeatures: FeatureItem[] = [
+  ...demoFeatures,
+  {
+    id: "4",
+    title: "Auth-ready flows",
+    description: "Sign-in, sign-up, and forgot-password shells you can connect to your provider.",
+    icon: "🔐",
+  },
+  {
+    id: "5",
+    title: "Dashboard shell",
+    description: "Sidebar, topbar, and widgets that match marketing — one product story end to end.",
+    icon: "📐",
+  },
+  {
+    id: "6",
+    title: "SEO-friendly pages",
+    description: "Metadata, sitemap, and structured sections for inner marketing routes.",
+    icon: "🔎",
+  },
+];
+
+export const featuresPageMeta = {
+  title: "Features",
+  description:
+    "Everything in Nexsas: AI-oriented UI, analytics patterns, team workflows, auth, and dashboard shell.",
+} as const;

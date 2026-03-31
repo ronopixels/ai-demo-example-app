@@ -10,6 +10,14 @@ export default function SignInPage() {
       description="Demo form only — connect your auth provider when ready."
     >
       <LoginForm />
+      <p className="mt-2 text-right text-sm">
+        <Link
+          href={routes.auth.forgotPassword}
+          className="font-medium text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-100"
+        >
+          Forgot password?
+        </Link>
+      </p>
       <p className="mt-4 text-center text-sm text-zinc-600 dark:text-zinc-400">
         No account?{" "}
         <Link

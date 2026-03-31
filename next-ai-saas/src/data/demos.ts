@@ -21,6 +21,25 @@ export const demos = [
       "cta",
     ],
   },
+  {
+    slug: "home-v2",
+    title: "Home v2",
+    homepage: "/home-v2",
+    heroVariant: "split" as const,
+    /** Mirrors `HomeV2` in `src/sections/home/home-v2.tsx` */
+    sectionOrder: [
+      "announcement",
+      "split-hero",
+      "stats-strip",
+      "logo-strip",
+      "testimonials",
+      "features",
+      "integrations",
+      "pricing",
+      "faq",
+      "cta",
+    ],
+  },
 ] as const;
 
 export type DemoSlug = (typeof demos)[number]["slug"];

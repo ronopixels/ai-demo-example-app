@@ -12,7 +12,7 @@ Use **before** coding: produce a **plan only** (no implementation). Aligns with 
 ## User prompt template (fill in)
 
 ```text
-Plan (no code yet) for: [TASK DESCRIPTION].
+Plan (Now Complete Page Map Properly) for: which page is done or not. If any page is not done then complete those pages same as go for the components and sections folder. At the last update, the component checklist was also updated.
 
 Context:
 - Route group: [marketing | auth | dashboard]
@@ -30,4 +30,4 @@ Output:
 
 ## Stop condition
 
-Stop after the plan is delivered. User sends a follow-up **build-*** command or scoped prompt to implement.
+Stop after the plan is delivered. User sends a follow-up **build-\*** command or scoped prompt to implement.
