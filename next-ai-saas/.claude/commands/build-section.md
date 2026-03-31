@@ -10,6 +10,7 @@ Use when adding or refactoring **one reusable page section** (not a full route).
 4. Keep the section **prop-driven** when it may appear on multiple pages (e.g. optional `className`, `heading`).
 5. Server Component by default; `"use client"` only for toggles, carousels, or forms.
 6. **Icons**: **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+7. **Motion**: **`motion/react`** in client boundaries only when animating (`26-motion.mdc`).
 
 ## User prompt template (fill in)
 
@@ -25,6 +26,7 @@ Constraints:
 - Do not touch: [routes / folders]
 - Tailwind v4, cn from @/lib/cn
 - Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if interactive animation (`26-motion.mdc`)
 - No new npm packages unless approved
 
 Output:

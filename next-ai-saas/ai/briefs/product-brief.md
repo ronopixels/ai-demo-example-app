@@ -18,6 +18,7 @@ AI SaaS, automation, agents, startups, analytics, support/helpdesk-style product
 
 - **Next.js only** (no bundled HTML export in this folder unless you add it).
 - **Icons**: **`@phosphor-icons/react`** for UI icons; static HTML mirrors use SVG/images (see `.cursor/rules/25-phosphor-icons.mdc`).
+- **Motion**: **`motion/react`** for interactive animation in client components; no extra animation stacks without approval (see `.cursor/rules/26-motion.mdc`).
 
 ## Architecture layers
 

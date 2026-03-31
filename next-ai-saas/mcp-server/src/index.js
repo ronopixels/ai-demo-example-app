@@ -680,7 +680,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           const s = skillsCache[k]
           if (s) text += `### ${s.name}\n\n${String(s.content).slice(0, 1200)}…\n\n`
         }
-        text += `\n## Checklist\n\n- Match route group and file layout under \`src/app/\`.\n- Use \`src/data/*\` and \`src/constants/site-config.ts\` where applicable.\n- Follow Tailwind v4 + project rules in \`.cursor/rules\`.\n- UI icons: \`@phosphor-icons/react\` only (see \`25-phosphor-icons.mdc\`); static HTML uses SVG/images.\n`
+        text += `\n## Checklist\n\n- Match route group and file layout under \`src/app/\`.\n- Use \`src/data/*\` and \`src/constants/site-config.ts\` where applicable.\n- Follow Tailwind v4 + project rules in \`.cursor/rules\`.\n- UI icons: \`@phosphor-icons/react\` only (see \`25-phosphor-icons.mdc\`); static HTML uses SVG/images.\n- Motion: \`motion/react\` in client components only (see \`26-motion.mdc\`); static HTML uses CSS.\n`
         return { content: [{ type: 'text', text }] }
       }
       case 'refresh_skills_cache': {
@@ -704,7 +704,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           text += `- React ${pkg.dependencies?.react || '?'}\n`
           text += `- Tailwind CSS v4 (PostCSS)\n`
           text += `- TypeScript\n`
-          text += `- UI icons: @phosphor-icons/react\n\n`
+          text += `- UI icons: @phosphor-icons/react\n`
+          text += `- Animation: motion (motion/react)\n\n`
         }
         if (section === 'all' || section === 'structure') {
           text += `## Layout\n\n\`\`\`\nsrc/\n  app/          # App Router\n  data/         # navigation, demos, …\n  lib/          # e.g. cn helper\n  constants/    # site-config\n  routes.ts\n\`\`\`\n\n`

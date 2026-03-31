@@ -18,6 +18,7 @@ Answer in sections:
 6. Suggested order of work
 7. Risks or open questions
 8. If UI icons are in scope: `@phosphor-icons/react` only; HTML export uses SVG/images
+9. If animation is in scope: `motion/react` in client components only (`26-motion.mdc`); HTML export uses CSS
 
 Stop after the plan. I will send a follow-up build command.
 ```

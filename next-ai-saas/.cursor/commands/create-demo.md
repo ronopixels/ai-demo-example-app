@@ -9,6 +9,7 @@ Use when adding a **new homepage demo** (alternate hero/section order via `demos
 3. Reuse existing section components; add new sections only if required.
 4. Do not duplicate the entire homepage as unrelated copies unless explicitly requested.
 5. **Icons** in any new UI: **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+6. **Motion**: **`motion/react`** in client components if adding animation (`26-motion.mdc`); static HTML cannot use it.
 
 ## User prompt template
 

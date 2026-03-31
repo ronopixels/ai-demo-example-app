@@ -2,7 +2,9 @@
 
 Track what exists vs planned. **Prefer reuse** before adding near-duplicates.
 
-**Icons**: use **`@phosphor-icons/react`** for UI icons in new components and sections (see `.cursor/rules/25-phosphor-icons.mdc`).
+**Icons**: **`@phosphor-icons/react`** for UI icons (see `.cursor/rules/25-phosphor-icons.mdc`).
+
+**Motion**: **`motion/react`** only for interactive animation — client components, accessible (`prefers-reduced-motion`); see `.cursor/rules/26-motion.mdc`.
 
 ## Level 1 — UI primitives (`src/components/ui/`)
 

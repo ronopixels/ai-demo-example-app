@@ -15,6 +15,7 @@ Constraints:
 - Do not refactor unrelated code
 - Do not add dependencies
 - If UI icons are involved: keep `@phosphor-icons/react` only (no other icon libraries)
+- If animation is involved: keep `motion/react` only (no extra animation libraries)
 - Keep behavior the same except for listed fixes
 
 Output:

@@ -9,6 +9,8 @@ description: >-
 
 **Icons in Next.js**: use **`@phosphor-icons/react`** for all UI icons unless the task is logos/illustrations only. No Lucide, Heroicons, or `react-icons`.
 
+**Motion**: use the **`motion`** package (`import { motion } from "motion/react"`) for interactive animation in client components — tasteful, performant, accessible (`useReducedMotion`). Do not add GSAP or duplicate animation stacks. See `.cursor/rules/26-motion.mdc`.
+
 ## When to use
 
 - New pages, sections, or components in this repo.
@@ -29,7 +31,7 @@ description: >-
 
 - **Tailwind v4** + TypeScript; use `cn` from `@/lib/cn` for conditional classes.
 - **No unrelated file edits**; **no new dependencies** unless the user explicitly allows.
-- **Server Components** by default; `"use client"` only when required.
+- **Server Components** by default; `"use client"` when interactivity, Phosphor in client boundaries, or **`motion/react`** requires it.
 
 ## Output
 

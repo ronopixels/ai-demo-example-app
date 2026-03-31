@@ -20,6 +20,7 @@ Requirements:
 Constraints:
 - Tailwind v4, TypeScript
 - Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if animating (`26-motion.mdc`)
 - No new npm packages unless approved
 
 Output:

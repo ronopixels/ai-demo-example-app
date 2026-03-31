@@ -11,6 +11,7 @@ Check:
 - ThemeForest-ready visual quality
 - No unrelated edits
 - Icons: `@phosphor-icons/react` only (flag other icon libraries)
+- Motion: `motion/react` only for interactive animation; flag other libs or Motion in RSC
 
 Output:
 - Short summary

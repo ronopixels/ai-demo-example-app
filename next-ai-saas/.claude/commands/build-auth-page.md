@@ -10,6 +10,7 @@ Use for **one** page under **`src/app/(auth)/`** (sign-in, sign-up, forgot passw
 4. **No real auth backend** unless specified — use UI and placeholder handlers only for a template.
 5. Keep layout minimal (centered card); avoid pulling marketing nav/footer unless the product brief says otherwise.
 6. **Icons**: **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+7. **Motion**: optional subtle transitions via **`motion/react`** in client components (`26-motion.mdc`).
 
 ## User prompt template (fill in)
 
@@ -22,6 +23,8 @@ Target:
 
 Constraints:
 - Accessible form markup
+- Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if animating (`26-motion.mdc`)
 - Match routes.ts paths
 - Do not wire production secrets or real OAuth
 - No new npm packages unless approved

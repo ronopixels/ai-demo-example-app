@@ -28,6 +28,7 @@ description: >-
 - Responsive: mobile, tablet, desktop.
 - Accessible: focus states, semantic headings, labels on forms.
 - **Icons** in composed UI: **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+- **Motion**: page-level animation belongs in small **client** components using **`motion/react`**; keep `page.tsx` as a Server Component shell when possible (see `.cursor/rules/26-motion.mdc`).
 
 ## Output
 

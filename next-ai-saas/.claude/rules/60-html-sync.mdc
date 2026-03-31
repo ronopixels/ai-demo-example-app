@@ -11,6 +11,7 @@ This repo is **Next.js-first**. If you add or sync a separate `html/` export:
 - Treat the **Next.js page as source of truth** for structure and content.
 - **No** React/Next-specific code in HTML (no hooks, no `next/image` in static export — use plain `<img>` where needed).
 - Next uses **`@phosphor-icons/react`** for icons; in HTML use **inline SVG or images** that match visually — not the npm package.
+- **`motion/react`** does not run in static HTML; use **CSS** transitions/keyframes for similar feel, or skip animation in export.
 - Preserve **class naming** and section order so CSS and documentation stay consistent.
 - Document any **intentional differences** (e.g. build-time vs static assets).
 

@@ -13,6 +13,7 @@ Review **only** the files the user names (or the last feature’s diff). Check:
 5. **Template readiness**: Realistic placeholders; no broken links; ThemeForest-quality polish.
 6. **Scope**: No unrelated edits or unnecessary deps.
 7. **Icons**: UI icons should be **`@phosphor-icons/react`** only (flag other icon libraries).
+8. **Motion**: Interactive animation should use **`motion/react`** in client components (`26-motion.mdc`); flag extra animation libraries or Motion in Server Components.
 
 ## Output format
 

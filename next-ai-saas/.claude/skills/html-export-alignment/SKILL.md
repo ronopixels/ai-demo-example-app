@@ -17,6 +17,7 @@ description: >-
 - **Source of truth**: The Next.js page (structure, section order, copy intent).
 - **No framework code** in HTML: no React hooks, no `next/image` — use plain HTML/CSS/JS patterns consistent with the template.
 - **Icons**: the Next app uses `@phosphor-icons/react`; in static HTML use **inline SVG or images** that visually match (same metaphor/weight), not the npm package.
+- **Motion**: Next may use `motion/react`; in HTML replicate with **CSS** transitions/keyframes or omit — do not ship React Motion in static export.
 - **Match sections** and hierarchy; note any asset path differences (`public/` vs relative `assets/`).
 - **Document gaps**: If something cannot be mirrored (e.g. dynamic MDX), say so in the summary.
 

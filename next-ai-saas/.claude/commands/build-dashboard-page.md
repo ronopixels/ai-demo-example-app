@@ -10,6 +10,7 @@ Use for **one** page under **`src/app/(dashboard)/`** (logged-in app shell).
 4. **Do not** import marketing-only sections into dashboard routes.
 5. Server Components by default; client only where charts or live UI require it.
 6. **Icons**: **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+7. **Motion**: **`motion/react`** for dashboard micro-interactions in client components (`26-motion.mdc`).
 
 ## User prompt template (fill in)
 
@@ -23,6 +24,8 @@ Target:
 
 Constraints:
 - Use existing dashboard layout
+- Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if adding animation (`26-motion.mdc`)
 - Realistic demo data; ThemeForest-ready polish
 - Do not modify marketing or auth routes
 - No new dependencies without approval

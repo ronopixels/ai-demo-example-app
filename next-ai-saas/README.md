@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000). The home page is `src/app/(
 
 - **Cursor** loads `.cursor/rules/*.mdc` using each file’s frontmatter (`alwaysApply`, `globs`, `description`). Scoped rules apply when you edit matching paths.
 - **Claude Code** can use `.claude/rules/` for the same standards where you mirror files (e.g. Phosphor icons, HTML sync).
-- **Source of truth for stack**: see `00-global.mdc`, `25-phosphor-icons.mdc`, and the rest of the numbered rules.
+- **Source of truth for stack**: see `00-global.mdc`, `25-phosphor-icons.mdc`, `26-motion.mdc`, and the rest of the numbered rules.
 
 ### Commands (`.cursor/commands/*.md` and `.claude/commands/*.md`)
 

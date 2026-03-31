@@ -1,0 +1,36 @@
+---
+description: Interactive animation with the motion package (client-only, a11y, HTML export)
+globs: src/**/*.{tsx,ts}
+alwaysApply: false
+---
+
+# Motion — `motion` (React)
+
+The project includes **`motion`** (see `package.json`). For React, import from **`motion/react`** — it exposes **`motion`**, **`m`**, **`AnimatePresence`**, **`useMotionValue`**, etc. (Motion-compatible API).
+
+## When to use
+
+- **Micro-interactions**: hover, tap, focus transitions; staggered reveals; small layout animations.
+- **Marketing polish**: hero accents, section entrance, dashboard widget emphasis — **sparingly**; ThemeForest buyers notice quality, not noise.
+- **Prefer CSS** for simple fades/slides (`transition`, `animate-*` in Tailwind) when you do not need springs or gesture-driven motion.
+
+## Rules
+
+- **Client only**: Motion runs in the browser. Put **`"use client"`** on the component (or a small wrapper) that imports `motion/react`. Do **not** import Motion in Server Components.
+- **Scope**: Keep animated surfaces **small**; avoid animating large layout roots on every navigation.
+- **Accessibility**: Respect **`prefers-reduced-motion`**. Prefer `useReducedMotion()` from `motion/react` (or `framer-motion`) to disable or simplify motion when the user requests reduced motion.
+- **Performance**: Avoid animating **`width` / `height` / `top` / `left`** on heavy trees; prefer `transform` and `opacity`. Lazy-load heavy animated sections if needed.
+- **No new animation libraries**: Do **not** add Framer Motion, GSAP, or other motion packages alongside `motion` unless the user explicitly approves (this package **is** the supported stack).
+
+## Static HTML (`sync-html`)
+
+- **Do not** rely on `motion/react` in exported HTML. Reproduce intent with **CSS** (`@keyframes`, `transition`) or **omit** motion.
+
+## Imports (examples)
+
+```tsx
+"use client";
+import { motion, useReducedMotion } from "motion/react";
+```
+
+Use **`m`** for the smaller HTML element wrapper when bundle size matters (see Motion docs).

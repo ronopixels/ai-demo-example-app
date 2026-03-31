@@ -21,6 +21,7 @@ Requirements:
 Constraints:
 - Tailwind v4, TypeScript, cn from @/lib/cn
 - Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if animating (`26-motion.mdc`)
 - Do not change marketing or auth routes
 - No new dependencies without approval
 

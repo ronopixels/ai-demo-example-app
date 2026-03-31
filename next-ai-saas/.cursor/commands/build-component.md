@@ -9,6 +9,7 @@ Use this template for **one** reusable component (UI primitive, card, or section
 3. Props should be explicit; avoid importing entire page datasets unless the component is a thin list renderer.
 4. No new dependencies unless the user approves.
 5. **Icons**: **`@phosphor-icons/react`** only for UI icons (see `.cursor/rules/25-phosphor-icons.mdc`).
+6. **Motion**: **`motion/react`** for animation in client components only (`26-motion.mdc`).
 
 ## User prompt template
 
@@ -19,6 +20,7 @@ Requirements:
 - [variants / sizes / behavior]
 - Tailwind v4, TypeScript, cn() for class merging
 - Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if animating (`26-motion.mdc`)
 - Accessible focus and aria where needed
 
 Output:

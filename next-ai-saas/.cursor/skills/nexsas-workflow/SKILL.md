@@ -42,6 +42,10 @@ description: >-
 
 - React UI icons: **`@phosphor-icons/react` only** (see `.cursor/rules/25-phosphor-icons.mdc`). Static HTML export: SVG/images, not this package.
 
+## Motion
+
+- Interactive animation: **`motion`** → import from **`motion/react`** in **`"use client"`** components only (see `.cursor/rules/26-motion.mdc`). Respect **`prefers-reduced-motion`**. Static HTML: CSS only, not `motion/react`.
+
 ## Failure modes to avoid
 
 - One giant prompt for the whole product.

@@ -12,6 +12,7 @@ Target:
 Constraints:
 - Tailwind v4, TypeScript, existing layout for this route group
 - Icons: `@phosphor-icons/react` only for UI icons
+- Motion: `motion/react` in client components if animating (`26-motion.mdc`)
 - Data from: [src/data/...]
 - Do not modify: [paths]
 - No new dependencies

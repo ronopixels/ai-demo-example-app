@@ -10,6 +10,7 @@ Add or update homepage demo [slug].
 
 Reuse existing sections; add new sections only if necessary.
 Icons: `@phosphor-icons/react` only for any new UI.
+Motion: `motion/react` in client components if animating (`26-motion.mdc`).
 
 Output:
 - demos.ts changes

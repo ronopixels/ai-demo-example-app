@@ -10,6 +10,7 @@ Use this template when asking the agent to implement **one** page.
 4. Use Tailwind v4 and `cn` from `@/lib/cn`; Server Components unless client state is required.
 5. Do not edit unrelated routes or add dependencies without explicit approval.
 6. **Icons**: UI icons use **`@phosphor-icons/react`** only (see `.cursor/rules/25-phosphor-icons.mdc`).
+7. **Motion**: use **`motion/react`** only for interactive animation — client components, follow `26-motion.mdc` (reduced motion, no extra animation libs).
 
 ## User prompt template (fill in)
 
@@ -23,6 +24,7 @@ Target:
 Constraints:
 - Use existing design tokens and layout patterns
 - Icons: `@phosphor-icons/react` only for UI icons
+- Motion: `motion/react` in client components if animating (`26-motion.mdc`)
 - Data from: [e.g. src/data/pricing.ts]
 - Do not touch: [folders to exclude]
 - No new npm packages

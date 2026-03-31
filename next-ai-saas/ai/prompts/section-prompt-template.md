@@ -18,6 +18,7 @@ Data:
 Constraints:
 - PascalCase export name: [Name]
 - Icons: `@phosphor-icons/react` only
+- Motion: `motion/react` if animating (`26-motion.mdc`)
 - Props: [list or "minimal, prop-driven for reuse"]
 - Server Component unless [interaction] requires "use client"
 - Do not edit unrelated pages
