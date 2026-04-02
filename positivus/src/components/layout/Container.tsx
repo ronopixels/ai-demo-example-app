@@ -1,0 +1,21 @@
+import type { ReactNode } from "react";
+
+type Props = {
+  children: ReactNode;
+  className?: string;
+  as?: "div" | "section" | "header" | "footer";
+};
+
+export function Container({
+  children,
+  className = "",
+  as: Tag = "div",
+}: Props) {
+  return (
+    <Tag
+      className={`mx-auto w-full max-w-[1440px] px-6 lg:px-[100px] ${className}`}
+    >
+      {children}
+    </Tag>
+  );
+}
